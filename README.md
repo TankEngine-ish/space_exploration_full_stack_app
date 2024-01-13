@@ -9,3 +9,5 @@ Different ports for the backend and front-end. We use env variable.
 server.js has no express code, just setting-up the http server. Again for the purpose of separation of concerns.
 
 4 functions in the front-end - get planets, get launches, submit launches, abort launches (once API is ready)
+
+setting CORS middleware to allow access from PORT: 3000 which is our front-end
