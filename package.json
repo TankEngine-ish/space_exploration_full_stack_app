@@ -1,0 +1,18 @@
+{
+  "name": "nasa_project",
+  "version": "1.0.0",
+  "description": "Worth noting the three different package.json files. One for the client-side, one for the backend and one at the root of the folder.",
+  "main": "index.js",
+  "scripts": {
+    "install-server": "npm install --prefix server",
+    "install-client": "npm install --prefix server",
+    "install": "npm run install-server && npm run install-client",
+    "server": "npm run watch --prefix server", 
+    "client": "npm start --prefix client",
+    "watch": "npm run server & npm run client",
+    "test": "npm run test --prefix server && npm run test --prefix client"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
