@@ -25,7 +25,11 @@ We dont want our controllers worrying about how the data in the model from the M
 Ideally we want the controllers focusing on working with our request and response and our models can give us data access functions.
 which control how the data in the model can be written to and read.
 
-OUr model only really works directly with the data. Our controller only ever uses functions to work with the data model in order to put it all together into a useful response to our front-end client.
+Our model only really works directly with the data. Our controller only ever uses functions to work with the data model in order to put it all together into a useful response to our front-end client.
+
+
+
+
 
 
 
