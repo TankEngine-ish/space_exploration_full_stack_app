@@ -1,9 +1,12 @@
 # NASA_Project
 
-Worth noting the three different package.json files.
+In this CRUD application
+
+Personal notes:
+
+* Worth noting the three different package.json files.
 One for the client-side, one for the backend and one at the root of the folder.
 The root json has scripts for running the server and the client + installing dependencies.
-
 
 Different ports for the backend and front-end. We use env variable. 
 For the purpose of separation of concerns server.js has no express code, it just sets-up the http server. 

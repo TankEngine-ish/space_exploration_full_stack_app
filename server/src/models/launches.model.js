@@ -19,8 +19,6 @@ function existsLaunchWithId(launchId) {
     return launches.has(launchId);
 }
 
-
-
 function getAllLaunches() {
     return Array.from(launches.values());
 }
@@ -39,13 +37,17 @@ function addNewLaunch(launch) {
 }
 
 function abortLaunchById(launchId) {
-    
-
+    const aborted = launches.get(launchId);
+    aborted.upcoming = false;
+    aborted.success = false;
+    return aborted;
 }
 
 module.exports = {
+    existsLaunchWithId,
     getAllLaunches,
     addNewLaunch,
-    existsLaunchWithId,
     abortLaunchById,
 }
+
+// exports follow same order as the order of function definitions
