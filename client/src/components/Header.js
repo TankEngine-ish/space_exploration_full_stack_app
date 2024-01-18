@@ -27,7 +27,7 @@ const styles = theme => ({
     fontWeight: "bold",
     marginLeft: "10px",
     marginRight: "15px",
-    fontSize: 28,
+    fontSize: 17,
   },
   clickable: {
     fontSize: 21,
@@ -73,7 +73,7 @@ const Header = props => {
       }} />
       <Logo animate size={50} className={classes.logo} layer="header" />
       <Words animate className={classes.banner}>
-        NASA Mission Control
+        Dead Space Mission Control
       </Words>
       <nav className={`${classes.nav}`}>
         <Clickable className={classes.clickable} onClick={onNav}>
