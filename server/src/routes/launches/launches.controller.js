@@ -25,6 +25,7 @@ function httpAddNewLaunch(req, res) {
             error: 'Invalid launch date',
         });
     }
+    
     addNewLaunch(launch);
     return res.status(201).json(launch);
 }
