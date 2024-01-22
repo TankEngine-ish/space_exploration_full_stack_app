@@ -1,8 +1,10 @@
 # Space Exploration Full Stack Application
 
-In this CRUD application
+In this full-stack CRUD application the tools I've used are: node/express, nodemon, cors, react, morgan logger middleware, Jest, SuperTest library, Postman
 
-Personal notes:
+
+
+## Personal notes:
 
 * Worth noting the three different package.json files.
 One for the client-side, one for the backend and one at the root of the folder.
@@ -20,7 +22,7 @@ Planets router calls functions in our planets controller. And our controller is 
 
 We can have many models used by a single controller and a single model that is used in many different routes/controllers. We separate models because the data doesnt always match up with the collections, API endpoints and overall functionality that our API needs to support through our controllers and routes.
 
-Tools I've used: node/express, nodemon, cors, react, morgan logger middleware, Jest, SuperTest library, Postman
+
 
 model and controller where do we draw the line?
 
