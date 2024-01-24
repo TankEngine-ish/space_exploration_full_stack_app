@@ -40,8 +40,6 @@ function getAllPlanets() {
 
 
 
-
-
 module.exports = {
     loadPlanetsData,
     getAllPlanets,
