@@ -31,6 +31,8 @@ Ideally we want the controllers focusing on working with our request and respons
 
 Our model only really works directly with the data. Our controller only ever uses functions to work with the data model in order to put it all together into a useful response to our front-end client.
 
+mongoose models as mvc models
+
 
 Endpoints testing via Postman:
 
