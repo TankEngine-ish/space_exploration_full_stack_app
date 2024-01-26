@@ -1,6 +1,6 @@
 # Space Exploration Full Stack Application
 
-In this full-stack CRUD application the tools I've used are: node/express, MongoDB + Mongoose, nodemon, cors, react, morgan logger middleware, Jest, SuperTest library, Postman.
+In this full-stack CRUD application the tools I've used are: node/express, MongoDB + Mongoose, nodemon, cors, React, morgan logger middleware, Jest, SuperTest library, Postman.
 
 It's a continuation of my Exoplanets Parser in Express.
 
@@ -22,7 +22,7 @@ Planets router calls functions in our planets controller. And our controller is 
 
 We can have many models used by a single controller and a single model that is used in many different routes/controllers. We separate models because the data doesnt always match up with the collections, API endpoints and overall functionality that our API needs to support through our controllers and routes.
 
-
+I also got introduced to referential integrity when designing the schema.
 
 model and controller where do we draw the line?
 
