@@ -33,11 +33,15 @@ function loadPlanetsData() {
             console.log(`${countPlanetsFound} habitable planets found!`);
             resolve();
         });
-    });
+    }); 
 }
 
 async function getAllPlanets() {
-    return await planets.find({});
+    return await planets.find({}, {
+        '_id': 0, // 0 means don't return this field
+        '__v': 0,
+    
+    });
 }
 
 

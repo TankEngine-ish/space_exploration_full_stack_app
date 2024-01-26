@@ -1,14 +1,14 @@
 # Space Exploration Full Stack Application
 
-In this full-stack CRUD application the tools I've used are: node/express, nodemon, cors, react, morgan logger middleware, Jest, SuperTest library, Postman
+In this full-stack CRUD application the tools I've used are: node/express, MongoDB + Mongoose, nodemon, cors, react, morgan logger middleware, Jest, SuperTest library, Postman.
+
+It's a continuation of my Exoplanets Parser in Express.
 
 
 
 ## Personal notes:
 
-* Worth noting the three different package.json files.
-One for the client-side, one for the backend and one at the root of the folder.
-The root json has scripts for running the server and the client + installing dependencies.
+* Worth noting the three different package.json files. One for the client-side, one for the backend and one at the root of the folder. The root json has scripts for running the server and the client + installing dependencies.
 
 Different ports for the backend and front-end. We use env variable. 
 For the purpose of separation of concerns server.js has no express code, it just sets-up the http server. 
@@ -34,7 +34,8 @@ Our model only really works directly with the data. Our controller only ever use
 mongoose models as mvc models
 
 
-Endpoints testing via Postman:
+ObjectIDs showing in Postman. We can use the ObjectId to check the creation date of the object among other things.
+The "__v": 0 are the version keys to keep track of the document.
 
 [screenshot]
 
