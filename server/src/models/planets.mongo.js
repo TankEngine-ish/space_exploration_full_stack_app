@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 
-const planetsSchema = new mongoose.Schema({
+const planetSchema = new mongoose.Schema({
     keplerName: {
         type: String,
         required: true,
@@ -12,4 +12,4 @@ const planetsSchema = new mongoose.Schema({
 // we need to npm run deploy again
 
 
-module.exports = mongoose.model('Planet', planetsSchema);
+module.exports = mongoose.model('Planet', planetSchema);
