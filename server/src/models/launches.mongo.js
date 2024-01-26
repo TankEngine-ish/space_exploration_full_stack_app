@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 const launchesSchema = new mongoose.Schema({
+    
     flightNumber: {
         type: Number,
         required: true,
@@ -13,7 +14,7 @@ const launchesSchema = new mongoose.Schema({
         type: String,
         required: true,
     },
-    rockets: {
+    rocket: {
         type: String,
         required: true,
     },
