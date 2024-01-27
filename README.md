@@ -1,10 +1,14 @@
 # Space Exploration Full Stack Application
 
+## Overview:
+
 This full-stack CRUD application is a 
 
 The tools I've used are: Node/Express, MongoDB + Mongoose, nodemon, cors, React, Morgan logger middleware, Jest, SuperTest library, Postman.
 
 This application is a continuation of my Exoplanets Parser in Express which you can find here: https://github.com/TankEngine-ish/Exoplanets_Explorer 
+
+The API of this application also talks with SpaceX's API to populate the list of historical rocket launches.
 
 
 

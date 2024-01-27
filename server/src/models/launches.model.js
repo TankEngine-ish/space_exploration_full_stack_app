@@ -44,9 +44,9 @@ async function saveLaunch(launch) {
         keplerName: launch.target,
     });
 
-    // if (!planet) {
-    //     throw new Error('No matching planet was found');
-    // }
+    if (!planet) {
+        throw new Error('No matching planet was found');
+    }
     // use only the built-in Error object (node's best practice)
 
     await launchesDatabase.findOneAndUpdate({
