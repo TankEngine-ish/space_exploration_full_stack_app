@@ -4,15 +4,15 @@
 
 This full-stack CRUD application is a 
 
-The tools I've used are: Node/Express, MongoDB + Mongoose, nodemon, cors, React, Morgan logger middleware, Jest, SuperTest library, Postman.
+The tools I've used are: Node/Express, MongoDB + Mongoose, React, nodemon, cors, axios, Morgan logger middleware, Jest, SuperTest library, Postman.
 
-A high-level depiction of my app's architecture (done in Figma).
+A high-level overview of my app's architecture (done in Figma).
 
 [screenshot]
 
 This application is a continuation of my Exoplanets Parser in Express which you can find here: https://github.com/TankEngine-ish/Exoplanets_Explorer 
 
-The API of this application also talks with an open source REST API for SpaceX's data in order to populate the list of historical rocket launches in my application. By the time this project was finished the open source SpaceX's API was on v5.
+The API of this application also talks with an open source REST API for SpaceX's data in order to populate the list of historical rocket launches in my application. By the time this project was finished the SpaceX's API was on v5.
 
 
 
@@ -34,6 +34,16 @@ The API of this application also talks with an open source REST API for SpaceX's
 
 * I also got introduced to referential integrity when designing the schema and the difficulty of implementing an auto-increment feature the same way it's in a SQL database.
 
+* It may be obvious but GET requests don't allow you to pass data in the body of the request. Instead, some API's use POST for search queries.
+
+* I learned about ObjectId which are 12-byte identifier that MongoDB uses as the default value for the _id field in a document. It serves as a unique identifier for each document in a collection.
+This ensures that each document has a unique identity within its collection and facilitates efficient querying and indexing.
+
+There's also the "__v" field which is often used by Mongoose. It stands for "version" and is used for document versioning.
+You can see what I mean in this screenshot of a test query.
+
+[screenshot]
+
 * Where do we draw the line between the model and the controller? We dont want our controllers worrying about how the data in the model from the MVC pattern is stored. Ideally we want the controllers focusing on working with our request and response and our models can give us data access functions which control how the data in the model can be written to and read. Our model only really works directly with the data. Our controller only ever uses functions to work with the data model in order to put it all together into a useful response to our front-end client.
 
 * The Jest tests actually talk to my real-life database I set-up so they kind of resemble an end-to-end testing scenario.
@@ -41,6 +51,9 @@ The API of this application also talks with an open source REST API for SpaceX's
 * I got introduced to versioning my API and how to do it properly. The below screenshot if from testing my v1 in Postman.
 
 [screenshot]
+
+
+
 
 
 
