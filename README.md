@@ -8,6 +8,7 @@ The tools I've used are: Node/Express, MongoDB + Mongoose, React, nodemon, cors,
 
 A high-level overview of my app's architecture (done in Figma).
 
+![alt text](<Images/Screenshot from 2024-02-02 01-29-21.png>)
 
 This application is a continuation of my Exoplanets Parser in Express which you can find here: https://github.com/TankEngine-ish/Exoplanets_Explorer 
 
@@ -27,7 +28,7 @@ The API of this application also talks with an open source REST API for SpaceX's
 
 * First time I had to delve deep into unit and component testing including the many different stages they can be crucially important.
 
-[screenshot]
+![alt text](Images/6397a190531a72626ba0be1b_1.png)
 
 * There's always a controller for a router. Planets router calls functions in our planets controller. And our controller is only used by our router. We can have many models used by a single controller and a single model that is used in many different routes/controllers. We separate models because the data doesnt always match up with the collections, API endpoints and overall functionality that our API needs to support through our controllers and routes.
 
@@ -41,7 +42,7 @@ This ensures that each document has a unique identity within its collection and 
 There's also the "__v" field which is often used by Mongoose. It stands for "version" and is used for document versioning.
 You can see what I mean in this screenshot of a test query.
 
-[screenshot]
+![alt text](<Images/Screenshot from 2024-01-25 16-13-26.png>)
 
 * Where do we draw the line between the model and the controller? We dont want our controllers worrying about how the data in the model from the MVC pattern is stored. Ideally we want the controllers focusing on working with our request and response and our models can give us data access functions which control how the data in the model can be written to and read. Our model only really works directly with the data. Our controller only ever uses functions to work with the data model in order to put it all together into a useful response to our front-end client.
 
@@ -50,9 +51,7 @@ You can see what I mean in this screenshot of a test query.
 * Pagination of data and the amount of work it saves for the server is immense. We add pagination when we want to avoid sending too much data from our API when less data is just enough. The SpaceX's API is paginated and I was experimenting with extracting specific pages from its data before I switched it off permanently as I needed to populate my server with every single one of their launches.
 
 
-[pagination postman screenshot]
-
-
+![alt text](Images/pagination.png)
 
 
 * The Jest tests actually talk to my real-life database I set-up so they kind of resemble an end-to-end testing scenario.
@@ -61,7 +60,7 @@ You can see what I mean in this screenshot of a test query.
 
 * I got introduced to versioning my API and how to do it properly. The below screenshot is from testing my v1 in Postman.
 
-[screenshot]
+![alt text](<Images/Screenshot from 2024-01-27 15-31-13.png>)
 
 
 
