@@ -113,15 +113,6 @@ async function getAllLaunches() {
 }
 
 async function saveLaunch(launch) {
-    const planet = await planets.findOne({
-        keplerName: launch.target,
-    });
-
-    // if (!planet) {
-    //     throw new Error('No matching planet was found');
-    // }
-    // use only the built-in Error object (node's best practice)
-
     await launchesDatabase.findOneAndUpdate({
         flightNumber: launch.flightNumber,
     },      launch, {
@@ -133,6 +124,14 @@ async function saveLaunch(launch) {
 
 
 async function scheduleNewLaunch(launch) {
+    const planet = await planets.findOne({
+        keplerName: launch.target,
+    });
+
+    if (!planet) {
+        throw new Error('No matching planet was found');
+    }
+    
     const newFlightNumber = await getLatestFlightNumber() + 1;
 
     const newLaunch = Object.assign(launch, {
