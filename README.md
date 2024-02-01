@@ -4,11 +4,10 @@
 
 This full-stack CRUD application is a 
 
-The tools I've used are: Node/Express, MongoDB + Mongoose, React, nodemon, cors, axios, Morgan logger middleware, Jest, SuperTest library, Postman.
+The tools I've used are: Node/Express, MongoDB + Mongoose, React, nodemon, cors, axios, Morgan logger middleware, Jest, SuperTest library, Postman, dotenv package for secrets.
 
 A high-level overview of my app's architecture (done in Figma).
 
-[screenshot]
 
 This application is a continuation of my Exoplanets Parser in Express which you can find here: https://github.com/TankEngine-ish/Exoplanets_Explorer 
 
@@ -57,6 +56,8 @@ You can see what I mean in this screenshot of a test query.
 
 
 * The Jest tests actually talk to my real-life database I set-up so they kind of resemble an end-to-end testing scenario.
+
+* Rotating credentials is a method that is used when you or someone from your team accidentally leaks the secrets on the version control system for the public eye.
 
 * I got introduced to versioning my API and how to do it properly. The below screenshot is from testing my v1 in Postman.
 

@@ -11,7 +11,7 @@ const { loadLaunchData } = require('./models/launches.model')
 
 const PORT = process.env.PORT || 8000;
 
-const MONG0_URL = 'mongodb+srv://dead_space_API:TSXPZE1RQR37doEb@deadspace.bgihqg0.mongodb.net/DeadSpace?retryWrites=true&w=majority';
+// const MONG0_URL = 'mongodb+srv://dead_space_API:TSXPZE1RQR37doEb@deadspace.bgihqg0.mongodb.net/DeadSpace?retryWrites=true&w=majority';
 
 const server = http.createServer(app);
 

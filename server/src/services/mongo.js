@@ -1,6 +1,8 @@
 const mongoose = require('mongoose');
 
-const MONG0_URL = 'process.env.MONGO_URL';
+require('dotenv').config();
+
+const MONG0_URL = process.env.MONGO_URL;
 
 
 mongoose.connection.once('open', () => {
@@ -26,5 +28,4 @@ async function mongoDisconnect() {
 module.exports = {
     mongoConnect,
     mongoDisconnect,
-
 }
