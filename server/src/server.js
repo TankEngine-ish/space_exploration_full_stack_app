@@ -1,5 +1,7 @@
 const http = require ('http');
 
+require('dotenv').config();
+
 
 const app = require ('./app');
 const { mongoConnect } = require('./services/mongo');
@@ -13,7 +15,6 @@ const MONG0_URL = 'mongodb+srv://dead_space_API:TSXPZE1RQR37doEb@deadspace.bgihq
 
 const server = http.createServer(app);
 
-
 async function startServer () {
     await mongoConnect();
     await loadPlanetsData();
@@ -22,7 +23,8 @@ async function startServer () {
     server.listen(PORT, () => {
         console.log(`Listening on port ${PORT}...`);
 });
-}
+} 
+
 
 startServer();
 

@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const MONG0_URL = 'mongodb+srv://dead_space_API:TSXPZE1RQR37doEb@deadspace.bgihqg0.mongodb.net/DeadSpace?retryWrites=true&w=majority';
+const MONG0_URL = 'process.env.MONGO_URL';
 
 
 mongoose.connection.once('open', () => {
