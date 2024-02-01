@@ -48,7 +48,7 @@ You can see what I mean in this screenshot of a test query.
 
 
 
-* Pagination of data and the amount of work it saves for the server is immense. The SpaceX's API is paginated and I was experimenting with extracting specific pages from its data before I switched it off permanently as I needed to populate my server with every single one of their launches.
+* Pagination of data and the amount of work it saves for the server is immense. We add pagination when we want to avoid sending too much data from our API when less data is just enough. The SpaceX's API is paginated and I was experimenting with extracting specific pages from its data before I switched it off permanently as I needed to populate my server with every single one of their launches.
 
 
 [pagination postman screenshot]
