@@ -48,7 +48,7 @@ You can see what I mean in this screenshot of a test query.
 
 * The Jest tests actually talk to my real-life database I set-up so they kind of resemble an end-to-end testing scenario.
 
-* I got introduced to versioning my API and how to do it properly. The below screenshot if from testing my v1 in Postman.
+* I got introduced to versioning my API and how to do it properly. The below screenshot is from testing my v1 in Postman.
 
 [screenshot]
 
