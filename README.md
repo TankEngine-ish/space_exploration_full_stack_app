@@ -15,6 +15,11 @@ This application is a continuation of my Exoplanets Parser in Express which you 
 The API of this application also talks with an open source REST API for SpaceX's data in order to populate the list of historical rocket launches in my application. By the time this project was finished the SpaceX's API was on v5.
 
 
+### Folder Structure:
+
+[text](Images/Untitled-2.md)
+
+
 
 ## Personal notes:
 
