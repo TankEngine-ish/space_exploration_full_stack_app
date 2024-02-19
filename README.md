@@ -52,7 +52,6 @@ You can see what I mean in this screenshot of a test query.
 * Where do we draw the line between the model and the controller? We dont want our controllers worrying about how the data in the model from the MVC pattern is stored. Ideally we want the controllers focusing on working with our request and response and our models can give us data access functions which control how the data in the model can be written to and read. Our model only really works directly with the data. Our controller only ever uses functions to work with the data model in order to put it all together into a useful response to our front-end client.
 
 
-
 * Pagination of data and the amount of work it saves for the server is immense. We add pagination when we want to avoid sending too much data from our API when less data is just enough. The SpaceX's API is paginated and I was experimenting with extracting specific pages from its data before I switched it off permanently as I needed to populate my server with every single one of their launches.
 
 
