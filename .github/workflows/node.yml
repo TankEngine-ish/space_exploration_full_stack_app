@@ -1,4 +1,4 @@
-name: Dead Space CI
+name: Dead Space Pipeline
 on: 
   push:
     branches: [ master ]
