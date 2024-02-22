@@ -1,0 +1,11 @@
+.git
+
+*/node_modules
+
+server/public
+
+
+
+# Excludes node_modules if it exists in any of the folders at the root of my project.
+# This means that the local dependecies won't be send to my dockerimage 
+# so the needed packages and dependencies will be installed fresh on the lts-alpine image.
