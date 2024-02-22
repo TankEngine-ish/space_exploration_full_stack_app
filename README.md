@@ -64,11 +64,6 @@ You can see what I mean in this screenshot of a test query.
 ![alt text](<Images/Screenshot from 2024-01-27 15-31-13.png>)
 
 
+* This was also my first workflow in GH Actions. In the below image you can see the successfull jobs that for two different versions of Node and MongoDB.
 
-
-
-
-
-
-
-
+![alt text](<Images/Screenshot from 2024-02-21 17-52-50.png>)
