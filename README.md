@@ -17,7 +17,113 @@ The API of this application also talks with an open source REST API for SpaceX's
 
 ### Folder Structure:
 
-![alt text](Images/123123123131333.png)
+```
+└── 📁NASA_Project
+    └── .dockerignore
+    └── 📁.github
+        └── 📁workflows
+            └── node.yml
+    └── .gitignore
+    └── Dockerfile
+    └── 📁Images
+        └── 123123123131333.png
+        └── 6397a190531a72626ba0be1b_1.png
+        └── Screenshot from 2024-01-25 16-13-26.png
+        └── Screenshot from 2024-01-27 15-31-13.png
+        └── Screenshot from 2024-02-02 01-29-21.png
+        └── Screenshot from 2024-02-21 17-52-50.png
+        └── pagination.png
+    └── README.md
+    └── 📁client
+        └── .gitignore
+        └── README.md
+        └── package-lock.json
+        └── package.json
+        └── 📁public
+            └── favicon.png
+            └── 📁img
+                └── background-large.jpg
+                └── background-medium.jpg
+                └── background.jpg
+                └── glow.png
+            └── index.html
+            └── manifest.json
+            └── robots.txt
+            └── 📁sound
+                └── abort.mp3
+                └── click.mp3
+                └── deploy.mp3
+                └── success.mp3
+                └── typing.mp3
+                └── warning.mp3
+        └── 📁src
+            └── App.js
+            └── 📁components
+                └── Centered.js
+                └── Clickable.js
+                └── Footer.js
+                └── Header.js
+            └── 📁hooks
+                └── requests.js
+                └── useLaunches.js
+                └── usePlanets.js
+            └── index.js
+            └── 📁pages
+                └── AppLayout.js
+                └── History.js
+                └── Launch.js
+                └── Upcoming.js
+            └── settings.js
+    └── package-lock.json
+    └── package.json
+    └── 📁server
+        └── .env
+        └── .gitignore
+        └── 📁data
+            └── kepler_data.csv
+        └── package-lock.json
+        └── package.json
+        └── 📁public
+            └── asset-manifest.json
+            └── favicon.png
+            └── 📁img
+                └── background-large.jpg
+                └── background-medium.jpg
+                └── background.jpg
+                └── glow.png
+            └── index.html
+            └── manifest.json
+            └── robots.txt
+            └── 📁sound
+                └── abort.mp3
+                └── click.mp3
+                └── deploy.mp3
+                └── success.mp3
+                └── typing.mp3
+                └── warning.mp3
+            └── 📁static
+                └── 📁js
+                    └── main.621e49c7.js
+                    └── main.621e49c7.js.LICENSE.txt
+                    └── main.621e49c7.js.map
+        └── 📁src
+            └── app.js
+            └── 📁models
+                └── launches.model.js
+                └── launches.mongo.js
+                └── planets.model.js
+                └── planets.mongo.js
+            └── 📁routes
+                └── api.js
+                └── 📁launches
+                    └── launches.controller.js
+                    └── launches.router.js
+                    └── launches.test.js
+                └── 📁planets
+                    └── planets.controller.js
+                    └── planets.router.js
+            └── server.js
+            └── 📁services
 
 
 
