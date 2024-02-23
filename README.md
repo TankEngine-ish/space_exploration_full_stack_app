@@ -2,17 +2,15 @@
 
 ## Overview:
 
-This full-stack application is a 
+This full-stack web application is a mock-up space mission control dashboard to schedule and launch rocket trips to real exoplanets. I've build its own RESTful API and on top of that it also leverages the open-source SpaceX API to populate our upcoming and historical tabs with real SpaceX rocket launches. This application is a continuation of my Exoplanets Parser in Express which you can find here: https://github.com/TankEngine-ish/Exoplanets_Explorer 
 
-The tools I've used are: Node/Express, MongoDB + Mongoose, React, nodemon, cors, axios, Morgan logger middleware, Jest, SuperTest library, Postman, dotenv package for secrets.
+NOTE: The front-end portion of this application is not built by me. I've only made very minor tweaks to its code.
+
+The tools I've used are: Node + Express, MongoDB + Mongoose, nodemon, cors, axios, Morgan logger middleware, Jest, SuperTest library, Postman, dotenv package for secrets, Docker and AWS EC2. For more details refer to ./server/package.json.
 
 A high-level overview of my app's architecture (done in Figma).
 
 ![alt text](<Images/Screenshot from 2024-02-02 01-29-21.png>)
-
-This application is a continuation of my Exoplanets Parser in Express which you can find here: https://github.com/TankEngine-ish/Exoplanets_Explorer 
-
-The API of this application also talks with an open source REST API for SpaceX's data in order to populate the list of historical rocket launches in my application. By the time this project was finished the SpaceX's API was on v5.
 
 
 ### Folder Structure:
