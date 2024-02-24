@@ -8,6 +8,8 @@ NOTE: The front-end portion of this application is not built by me. I've only ma
 
 The tools I've used are: Node + Express, MongoDB + Mongoose, nodemon, cors, axios, Morgan logger middleware, Jest, SuperTest library, Postman, dotenv package for secrets, Docker and AWS EC2. For more details refer to ./server/package.json.
 
+It's live on http://13.51.175.50:8000/
+
 A high-level overview of my app's architecture (done in Figma).
 
 ![alt text](<Images/Screenshot from 2024-02-02 01-29-21.png>)
@@ -173,3 +175,6 @@ You can see what I mean in this screenshot of a test query.
 * This was also my first workflow in GH Actions. In the below image you can see the successfull jobs that for two different versions of Node and MongoDB.
 
 ![alt text](<Images/Screenshot from 2024-02-21 17-52-50.png>)
+
+
+* At the end I also deployed the app to an EC2 intance via a Docker image I created.
