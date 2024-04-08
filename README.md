@@ -8,14 +8,16 @@ NOTE: The front-end portion of this application is not built by me. I've only ma
 
 The tools I've used are: Node + Express, MongoDB + Mongoose, nodemon, cors, axios, Morgan logger middleware, Jest, SuperTest library, Postman, dotenv package for secrets, Docker and AWS EC2. For more details refer to ./server/package.json.
 
-It's live on http://13.51.175.50:8000/
+It's live on **http://51.20.3.248:8000/**
 
 ## Usage
 
 In case of the link above not working or if I have manually stopped it in case I get billed with a trillion dollars by AWS here's a short guide on how to get the website working on your machine.
 
 * First install Docker on your machine and pull my Docker image from DockerHub - `docker pull tankengine/dead_space:latest`
+
 * Then type `docker images` and run the container of my image with `docker run -p 8000:8000 -it <first_three_symbols_of_IMAGEID>`
+
 * Go to `http://localhost:8000`
 
 A high-level overview of my app's architecture (done in Figma).
