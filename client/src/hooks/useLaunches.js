@@ -21,10 +21,16 @@ function useLaunches(onSuccessSound, onAbortSound, onFailureSound) {
 
   const submitLaunch = useCallback(async (e) => {
     e.preventDefault();
-    setPendingLaunch(true);
     const data = new FormData(e.target);
-    const launchDate = new Date(data.get("launch-day"));
     const mission = data.get("mission-name");
+
+    if (!mission) {
+      alert("Mission name is required!");
+      return;
+    }
+    
+    setPendingLaunch(true);
+    const launchDate = new Date(data.get("launch-day"));
     const rocket = data.get("rocket-name");
     const target = data.get("planets-selector");
     const response = await httpSubmitLaunch({
@@ -34,8 +40,7 @@ function useLaunches(onSuccessSound, onAbortSound, onFailureSound) {
       target,
     });
 
-
-    
+ 
     const success = response.ok;
     if (success) {
       getLaunches();
