@@ -4,11 +4,13 @@
 
 This full-stack web application is a mock-up space mission control dashboard to schedule and launch rocket trips to real exoplanets. I've build its own RESTful API and on top of that it also leverages the open-source SpaceX API to populate our upcoming and historical tabs with real SpaceX rocket launches. This application is a continuation of my Exoplanets Parser in Express which you can find here: https://github.com/TankEngine-ish/Exoplanets_Explorer 
 
-NOTE: The front-end portion of this application is not built by me. I've only made very minor tweaks to its code.
+**NOTE**: The front-end portion of this application is not built by me. I've only made very minor tweaks to its code.
 
 The tools I've used are: Node + Express, MongoDB + Mongoose, nodemon, cors, axios, Morgan logger middleware, Jest, SuperTest library, Postman, dotenv package for secrets, Docker and AWS EC2. For more details refer to ./server/package.json.
 
 It's live on **http://51.20.3.248:8000/**
+
+**NOTE_2**: Make sure your port 8000 is freed up on your system. You can check if there's any processes using it by typing `sudo lsof -i :8000`. In case there is you can kill it by using `sudo kill -9 <PID>`. PID is the process identifier - it's a sequence of numbers.
 
 ## Usage
 
