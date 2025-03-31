@@ -194,4 +194,4 @@ You can see what I mean in this screenshot of a test query.
 ![alt text](<Images/Screenshot from 2024-02-21 17-52-50.png>)
 
 
-* At the end I also deployed the app to an EC2 intance via a Docker image I created.
+* At the end I also deployed the app to an EC2 intance via a Docker image I created. I have also added a step to upload my work to the docker hub container registry.
