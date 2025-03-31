@@ -8,9 +8,14 @@ This full-stack web application is a mock-up space mission control dashboard to 
 
 The tools I've used are: Node + Express, MongoDB + Mongoose, nodemon, cors, axios, Morgan logger middleware, Jest, SuperTest library, Postman, dotenv package for secrets, Docker and AWS EC2. For more details refer to ./server/package.json.
 
-It's live on **http://51.20.3.248:8000/**
+## Live preview: 
 
-**NOTE_2**: Make sure your port 8000 is freed up on your system. You can check if there's any processes using it by typing `sudo lsof -i :8000`. In case there is you can kill it by using `sudo kill -9 <PID>`. PID is the process identifier - it's a sequence of numbers.
+https://majortomtogroundcontrol.duckdns.org/ 
+
+**NOTE_2**: I have deployed this application via my Traefic Configuration https://github.com/TankEngine-ish/traefik_multi_app_hosting (apart from my AWS deployment earlier) with DuckDNS and Let's Encrypt.
+
+
+**NOTE_3**: Make sure your port 8000 is freed up on your system. You can check if there's any processes using it by typing `sudo lsof -i :8000`. In case there is you can kill it by using `sudo kill -9 <PID>`. PID is the process identifier - it's a sequence of numbers.
 
 ## Usage
 
